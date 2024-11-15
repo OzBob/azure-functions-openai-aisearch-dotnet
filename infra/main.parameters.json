@@ -30,13 +30,13 @@
       "value": "${AZURE_OPENAI_CHATGPT_DEPLOYMENT=chat}"
     },
     "chatGptDeploymentCapacity":{
-      "value": "${AZURE_OPENAI_CHATGPT_DEPLOYMENT_CAPACITY}"
+      "value": "${AZURE_OPENAI_CHATGPT_DEPLOYMENT_CAPACITY=8}"
     },
     "chatGptDeploymentVersion":{
-      "value": "${AZURE_OPENAI_CHATGPT_DEPLOYMENT_VERSION=turbo-2024-04-09}"
+      "value": "${AZURE_OPENAI_CHATGPT_DEPLOYMENT_VERSION=2024-07-18}"
     },
     "chatGptModelName":{
-      "value": "${AZURE_OPENAI_CHATGPT_MODEL=gpt-4}"
+      "value": "${AZURE_OPENAI_CHATGPT_MODEL=gpt-4o-mini}"
     },
     "storageAccountName": {
       "value": "${AZURE_STORAGE_ACCOUNT}"
@@ -46,6 +46,16 @@
     },
     "azFunctionHostingPlanType": {
       "value": "flexconsumption"
+    },
+    "embeddingModelName": {
+      "value": "${AZURE_OPENAI_EMBEDDING_MODEL=text-embedding-3-small}"
+    },
+    "embeddingDeploymentCapacity": {
+      "value": "${AZURE_OPENAI_EMBEDDING_MODEL_CAPACITY=110}"
+    },
+    "embeddingDeploymentVersion": {
+      "value": "${AZURE_OPENAI_EMBEDDING_MODEL_VERSION=1}"
     }
+    
   }
 }
